@@ -54,11 +54,11 @@ jobs:
                 uses: rarestype/swift-install-action@v1
                 if: runner.os != 'macOS'
                 with:
-                    swift-release: 6.3.2-RELEASE
+                    swift-release: 6.3.3-RELEASE
 
-            -   name: 💝 Select Xcode 26.5 💝
+            -   name: 💝 Select Xcode 26.6 💝
                 if: runner.os == 'macOS'
-                run: sudo xcode-select -s /Applications/Xcode_26.5.app/Contents/Developer
+                run: sudo xcode-select -s /Applications/Xcode_26.6.app/Contents/Developer
 
 
             -   name: 💝 Build 💝
